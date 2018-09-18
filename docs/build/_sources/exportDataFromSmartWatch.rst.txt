@@ -11,7 +11,7 @@ Exporting Data from the Smartwatches
 * Revised: September 18, 2018
 * Copyright (c) 2018 INAOE
 
-.. _secVersionLog:
+.. _exportDataFromSmartWatch:secLog:
 
 
 Version Log
@@ -28,7 +28,7 @@ Version  Change Description       Date        Responsible
 
 
 
-.. _secInstructions:
+.. _exportDataFromSmartWatch:secInstructions:
 
 
 
@@ -56,7 +56,7 @@ Please find the full guide here:
 * :download:`INSTRUCTIVO PARA EXPORTACIÓN DE DATOS DEL CELULAR <GuiaParaExportacionDeDatosDeCelular_v2.pdf>` (Spanish only).
 
 
-.. _secRemarks:
+.. _exportDataFromSmartWatch:secRemarks:
 
 Remarks
 -------

@@ -13,7 +13,7 @@ Instructions for Graphana integration
 * Revised: September 18, 2018
 * Copyright (c) 2018 INAOE
 
-.. _secVersionLog:
+.. _graphanaIntegration:secVersionLog:
 
 
 Version Log
@@ -30,7 +30,7 @@ Version  Change Description       Date        Responsible
 
 
 
-.. _secStep1:
+.. _graphanaIntegration:secStep1:
 
 Step 1: From the smartwatch
 ---------------------------
@@ -54,7 +54,7 @@ Activate 4G data
 
 
 
-.. _secStep2:
+.. _graphanaIntegration:secStep2:
 
 Step 2: From the laptop
 -----------------------
@@ -69,7 +69,7 @@ Launch the virtual machine
 
   [Windows]Start --> VirtualBox --> centos6.9 --> Start
 
-.. _secStep2a:
+.. _graphanaIntegration:secStep2a:
 
 Step 2a: From the virtual machine (in the laptop)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -102,7 +102,7 @@ Repeat until it indicates it has started
 If any of the followiung steps do not work, go back to the line the stop mongod
 
 
-.. _secStep3:
+.. _graphanaIntegration:secStep3:
 
 Step 3: From the smartwatch
 ---------------------------
@@ -117,7 +117,7 @@ Wait until all sensors have been detected and are active
 Revise that both smartwatches are sending readings
 
 
-.. _secStep4:
+.. _graphanaIntegration:secStep4:
 
 Step 4: From the laptop
 -----------------------
@@ -155,7 +155,7 @@ render.
 To refresh Graphana, click the button on the top right corner
 
 
-.. _secStep5:
+.. _graphanaIntegration:secStep5:
 
 Step 5: Closing
 ---------------
@@ -177,7 +177,7 @@ Repeat until no response
   sudo shutdown now
 
 
-.. _secStep5b:
+.. _graphanaIntegration:secStep5b:
 
 Step 5b: From the smartwatch
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
