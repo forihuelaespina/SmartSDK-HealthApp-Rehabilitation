@@ -1,0 +1,246 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Instructions for Graphana integration &#8212; SmartHealthApp-Rehabilitation  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="instructions-for-graphana-integration">
+<span id="rst-graphanaintegration"></span><h1>Instructions for Graphana integration<a class="headerlink" href="#instructions-for-graphana-integration" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>File: graphanaIntegration</li>
+<li>Version: 0.1.1</li>
+<li>Authors: Patrick Heyer Wollenberg and Felipe Orihuela-Espina</li>
+<li>Created: March 2, 2018</li>
+<li>Revised: September 18, 2018</li>
+<li>Copyright (c) 2018 INAOE</li>
+</ul>
+<div class="section" id="version-log">
+<span id="secversionlog"></span><h2>Version Log<a class="headerlink" href="#version-log" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="37%" />
+<col width="17%" />
+<col width="35%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Version</th>
+<th class="head">Change Description</th>
+<th class="head">Date</th>
+<th class="head">Responsible</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0.1.1</td>
+<td>Translated to English</td>
+<td>18/Sep/2018</td>
+<td>Felipe Orihuela-Espina</td>
+</tr>
+<tr class="row-odd"><td>0.1</td>
+<td>Initial description</td>
+<td>2/Mar/2018</td>
+<td>Patrick Heyer</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="step-1-from-the-smartwatch">
+<span id="secstep1"></span><h2>Step 1: From the smartwatch<a class="headerlink" href="#step-1-from-the-smartwatch" title="Permalink to this headline">¶</a></h2>
+<p>Connect the watches using bluetooth</p>
+<p>If the above step fails, restart the smartwatch</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">AndroidWear</span> <span class="o">---&gt;</span> <span class="n">Top</span> <span class="n">menu</span><span class="p">;</span> <span class="n">Select</span> <span class="n">the</span> <span class="mi">2</span> <span class="n">devices</span> <span class="n">until</span> <span class="s2">&quot;Conexión establecida&quot;</span>
+</pre></div>
+</div>
+<p>Activate the wifi zone of the smartwatch</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Settings</span><span class="o">---&gt;</span><span class="n">More</span><span class="o">---&gt;</span><span class="n">Conexiones</span> <span class="n">y</span> <span class="n">zona</span> <span class="n">Wi</span><span class="o">-</span><span class="n">Fi</span><span class="o">---&gt;</span><span class="n">Zona</span> <span class="n">Wi</span><span class="o">-</span><span class="n">Fi</span> <span class="n">portátil</span> <span class="p">(</span><span class="n">switch</span> <span class="n">on</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Activate 4G data</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Settings</span><span class="o">---&gt;</span><span class="n">Uso</span> <span class="n">de</span> <span class="n">datos</span><span class="o">---&gt;</span><span class="n">SIM1</span><span class="p">:</span><span class="n">TELCEL</span><span class="o">----&gt;</span><span class="n">Mobile</span> <span class="n">data</span> <span class="p">(</span><span class="n">switch</span> <span class="n">on</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-2-from-the-laptop">
+<span id="secstep2"></span><h2>Step 2: From the laptop<a class="headerlink" href="#step-2-from-the-laptop" title="Permalink to this headline">¶</a></h2>
+<p>Connect laptop to the smartwatch network</p>
+<p>Connect to network “Moto G (5)” using the icon in Windows network icon (no password needed)</p>
+<p>Launch the virtual machine</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">Windows</span><span class="p">]</span><span class="n">Start</span> <span class="o">--&gt;</span> <span class="n">VirtualBox</span> <span class="o">--&gt;</span> <span class="n">centos6</span><span class="o">.</span><span class="mi">9</span> <span class="o">--&gt;</span> <span class="n">Start</span>
+</pre></div>
+</div>
+<div class="section" id="step-2a-from-the-virtual-machine-in-the-laptop">
+<span id="secstep2a"></span><h3>Step 2a: From the virtual machine (in the laptop)<a class="headerlink" href="#step-2a-from-the-virtual-machine-in-the-laptop" title="Permalink to this headline">¶</a></h3>
+<p>In the virtual machine, start a new session and boot the system</p>
+<ul class="simple">
+<li>user: centos</li>
+<li>password: your pass here</li>
+</ul>
+<p>Check that IP 192.168.43.115 is assigned</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ifconfig</span>
+<span class="n">sudo</span> <span class="n">service</span> <span class="n">mongod</span> <span class="n">stop</span>
+<span class="n">sudo</span> <span class="n">service</span> <span class="n">docker</span> <span class="n">stop</span>
+<span class="n">sudo</span> <span class="n">service</span> <span class="n">docker</span> <span class="n">start</span>
+</pre></div>
+</div>
+<p>wait a minute or so until everything is running and stable</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="n">stop</span>
+</pre></div>
+</div>
+<p>Repeat until no response</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="o">/</span><span class="n">usr</span><span class="o">/</span><span class="n">local</span><span class="o">/</span><span class="nb">bin</span><span class="o">/</span><span class="n">docker</span><span class="o">-</span><span class="n">compose</span> <span class="n">up</span> <span class="o">-</span><span class="n">d</span>
+</pre></div>
+</div>
+<p>Repeat until it indicates it has started</p>
+<p>If any of the followiung steps do not work, go back to the line the stop mongod</p>
+</div>
+</div>
+<div class="section" id="step-3-from-the-smartwatch">
+<span id="secstep3"></span><h2>Step 3: From the smartwatch<a class="headerlink" href="#step-3-from-the-smartwatch" title="Permalink to this headline">¶</a></h2>
+<p>Run the app</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Sensor</span> <span class="n">Dashboard</span>
+</pre></div>
+</div>
+<p>Wait until all sensors have been detected and are active</p>
+<p>Revise that both smartwatches are sending readings</p>
+</div>
+<div class="section" id="step-4-from-the-laptop">
+<span id="secstep4"></span><h2>Step 4: From the laptop<a class="headerlink" href="#step-4-from-the-laptop" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">DO</span> <span class="pre">NOT</span> <span class="pre">NAVIGATE</span> <span class="pre">ON</span> <span class="pre">INTERNET!!!!!!</span></code></p>
+<p>Check the Orion Context Broker</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Navegador</span> <span class="o">--&gt;</span> <span class="mf">192.168</span><span class="o">.</span><span class="mf">43.115</span><span class="p">:</span><span class="mi">2016</span><span class="o">/</span><span class="n">version</span>
+</pre></div>
+</div>
+<p>Show Graphana</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Web</span> <span class="n">browser</span> <span class="o">--&gt;</span> <span class="mf">192.168</span><span class="o">.</span><span class="mf">43.115</span><span class="p">:</span><span class="mi">3000</span><span class="o">/</span><span class="n">login</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li>user: admin</li>
+<li>pass: admin</li>
+</ul>
+<p>Open the dashboard; search for the corresponding link and execute the name;</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;New Dashboard Copy&quot;</span>
+</pre></div>
+</div>
+<p>Add path (this may change from one laptop to another)</p>
+<p>If a copy of the project is not directly available on your dashboard (e.g.
+first time), then generate a new copy in-situ choosing whatever you like to
+render.</p>
+<ul class="simple">
+<li>Note: Additional admin users is a paid option in Graphana and thus not considered here.</li>
+</ul>
+<p>To refresh Graphana, click the button on the top right corner</p>
+</div>
+<div class="section" id="step-5-closing">
+<span id="secstep5"></span><h2>Step 5: Closing<a class="headerlink" href="#step-5-closing" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-5a-from-the-laptop">
+<span id="secstep5a"></span><h3>Step 5a: From the laptop<a class="headerlink" href="#step-5a-from-the-laptop" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>`sudo /usr/local/bin/docker-compose stop`
+</pre></div>
+</div>
+<p>Repeat until no response</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">service</span> <span class="n">docker</span> <span class="n">stop</span>
+<span class="n">sudo</span> <span class="n">shutdown</span> <span class="n">now</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="step-5b-from-the-smartwatch">
+<span id="secstep5b"></span><h3>Step 5b: From the smartwatch<a class="headerlink" href="#step-5b-from-the-smartwatch" title="Permalink to this headline">¶</a></h3>
+<p>Desactivate the wifi zone</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Settings</span><span class="o">---&gt;</span><span class="n">More</span><span class="o">---&gt;</span><span class="n">Conexiones</span> <span class="n">y</span> <span class="n">zona</span> <span class="n">Wi</span><span class="o">-</span><span class="n">Fi</span><span class="o">---&gt;</span><span class="n">Zona</span> <span class="n">Wi</span><span class="o">-</span><span class="n">Fi</span> <span class="n">portátil</span> <span class="p">(</span><span class="n">switch</span> <span class="n">off</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Desactivate 4G data</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Settings</span><span class="o">---&gt;</span><span class="n">Uso</span> <span class="n">de</span> <span class="n">datos</span><span class="o">---&gt;</span><span class="n">SIM1</span><span class="p">:</span><span class="n">TELCEL</span><span class="o">----&gt;</span><span class="n">Mobile</span> <span class="n">data</span> <span class="p">(</span><span class="n">switch</span> <span class="n">off</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">SmartHealthApp-Rehabilitation</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Patrick Heyer-Wollenberg, Silvia Franco Iliana, Felipe Orihuela-Espina, Luis Enrique Sucar.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="_sources/graphanaIntegration.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
